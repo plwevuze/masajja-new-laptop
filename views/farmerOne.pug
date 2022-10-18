@@ -34,10 +34,11 @@ header
       .col
         label.form-label(for='inputEmail4') Ward / Lc
         select#address.form-control(type='text' name='ward' placeholder='physical/online' aria-label='First name')
-          option(selected='') Ward 1
-          option Ward 2
-          option Ward 3
-          option Ward 4
+          option(selected='')(value= '') Ward / Lc
+          option(value= 'Ward 1') Ward 1
+          option(value= 'Ward 2') Ward 2
+          option(value= 'Ward 3') Ward 3
+          option(value= 'Ward 4') Ward 4
       .col
         label.form-label(for='inputEmail4') NIN
         input#nin.form-control(type='text' name='nin' placeholder='CM9830HF4243FH-FK' aria-label='NIN')
@@ -48,13 +49,13 @@ header
         .col
           label.form-label(for='inputEmail4') Agric. Activity
           select#address.form-control(type='text' name='activity' placeholder='activity' aria-label='First name')
-            option(selected='') poultry
-            option Horticulture
-            option Diary
+            option(selected='')(value='Poultry') Poultry
+            option(value = 'Horticulture') Horticulture
+            option(value = 'Diary') Diary
         .col
           label.form-label(for='inputEmail4') Role
           select#region.form-control(name='role' title='region')
-            option Farmer One
+            option(selected='')(value='FarmerOne') Farmer One
         .col
           label.form-label(for='inputCity') Date Of Registration
           input#inputDOB.form-control(type='date' name='registration_date' placeholder='mm/dd/yy')
@@ -65,8 +66,8 @@ header
         .col
           label.form-label(for='inputEmail4') Type of Residence
           select#occupation.form-control(name='residence_type' title='region')
-            option landlord
-            option Tenant
+            option(value='Permanent') Permanent
+            option(value='Temporary') Temporary
         .col
           label.form-label(for='inputZip') Tel. Number
           input#phone-number1.form-control(type='text' name='phoneNumber' placeholder='+256-7xx-xxx-xxx')
@@ -99,7 +100,7 @@ header
             label.form-label(for='password') Confirm Password:
             input#concirm_password.form-control(type='password' placeholder='************' name='confirm_password' required='')
         .form-field
-            input#submit.btn(type='submit' value='Register' onclick='agriculturalOffcer ()')
+            input#submit.btn(type='submit' value='Register' onclick='agriculturalOfficer ()')
             small
 br
 br

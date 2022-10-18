@@ -4,15 +4,14 @@ const path = require('path');
 const mongoose = require('mongoose');
 const config = require('./config/db');
 const passport = require('passport');
-
 //express session
-//express sesssion
 const expressSession = require('express-session')({
 	secret: 'secret',
 	resave: false,
 	saveUninitialized: false,
 });
-
+//import the user model
+const Registration =require('./models/Users');
 //##########*******importing route files********############
 const registerAORoutes = require('./routes/registerAORoutes');
 const registerFORoutes = require('./routes/registerFORoutes');
@@ -58,7 +57,12 @@ app.use(expressSession);
 //passport configuration middleware
 app.use(passport.initialize());
 app.use(passport.session());
-
+//authentication
+passport.use(Registration .createStrategy());
+//user assigned a serial number for tracking wen logged into the system
+passport.serializeUser(Registration.serializeUser());
+//serial number for the session is destroyed wen a user logs out
+passport.deserializeUser(Registration.deserializeUser);
 //###############***********Routes**********#############
 app.use('/register/agriculturalOfficer', registerAORoutes);
 app.use('/register/farmerOne', registerFORoutes);

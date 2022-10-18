@@ -1,94 +1,100 @@
-const momgoose = reqiure('mongoose');
+const mongoose = require('mongoose');
+const passportLocalMongoose = require ('passport-local-mongoose');
 
-const userSchema = new mongoose.Schemer({
+const userSchema = new mongoose.Schema ({
 	userId: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 	fname: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 	lname: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 	ward: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	nin: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 	activity: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	role: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 	registration_date: {
 		type: Date,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	birth_date: {
 		type: Date,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	email: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	residence_type: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	phoneNumber: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	gender: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	Single: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	Married: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	Divorced: {
 		type: String,
-		reqiure: true,
+		// required: true,
 		trim: true,
 	},
 	password: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 	confirm_password: {
 		type: String,
-		reqiure: true,
+		required: true,
 		trim: true,
 	},
 });
+
+userSchema.plugin(passportLocalMongoose, {
+	usernameField: 'userId'
+})
+module.exports = mongoose.model('Registration', userSchema);

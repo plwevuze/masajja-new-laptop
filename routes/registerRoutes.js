@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
 });
 router.post('/', (req, res) => {
 	console.log(req.body);
-	res.send('Urban Farmer Registration Successfull!!!!!');
+	// res.send('Urban Farmer Registration Successfull!!!!!');
 	// res.redirect('/register/farmerOne');
 });
 

@@ -22,7 +22,7 @@ header
     .row.g-3
       .col
         label.form-label(for='inputEmail4') User ID
-        input#userId.form-control(type='text' name='userId' placeholder='FO ID' aria-label='NIN')
+        input#userId.form-control(type='text' name='userId' placeholder='AO ID' aria-label='NIN')
       .col
         label.form-label(for='inputEmail4') First Name
         input#fname.form-control(type='text' name='fname' placeholder='John' aria-label='name')
@@ -33,7 +33,7 @@ header
       .col
         label.form-label(for='inputEmail4') Role
         select#region.form-control(name='role' title='region')
-          option Agricultural Officer
+          option(value = 'Agricultural Officer') Agricultural Officer
       .col
         label.form-label(for='inputCity') Date Of Registration
         input#inputDOB.form-control(type='date' name='registration_date' placeholder='mm/dd/yy')
@@ -47,8 +47,9 @@ header
       .col
         label.form-label(for='inputEmail4') Type of Residence
         select#occupation.form-control(name='residence_type' title='region')
-          option landlord
-          option Tenant
+          option(selected='')(value= '') Type of Residence
+          option(value='Permanent') Permanent
+          option(value='Temporary') Temporary
       .col
         label.form-label(for='inputZip') Tel. Number
         input#phone-number1.form-control(type='text' name='phoneNumber' placeholder='+256-7xx-xxx-xxx')
