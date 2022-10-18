@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agricultural Officer</title>
+  <link rel="stylesheet" href="/public/bootstrap-5.2.0/bootstrap-5.2.0/dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<header>
+  <!-- ##############****************** NAVBAR ****************############# -->
+  <nav>
+    <div class="header">
+    
+      <img src="/Agrcultural_officer/images/ufarm logo.png" alt="logo" class="logo1">
+ 
+      <div class="navbar" id="nnb">
+        <a href="home.html">Home   |</a>
+      
+      </div>
+     
+    
+    </div>
+  </nav>
+</header>
+
+
+<body>
+  <div class="container">
+    <form action="/register" method="post" class="form" id="signup" name="registration">
+      <br>
+      <h1>Agricultural Officer  Registration Form</h1>
+      <h5>New to Ufarm? Create AO account here!</h5>
+      <div class="row g-3">
+        <div class="col">
+
+          <label for="inputEmail4" class="form-label">User ID</label>
+          <input type="text" name="userId" class="form-control" id="userId" placeholder="FO ID" aria-label="NIN" />
+
+        </div>
+        <div class="col">
+          <label for="inputEmail4" class="form-label">First Name</label>
+          <input type="text" name="fname" class="form-control" id="fname" placeholder="John" aria-label="name" />
+        </div>
+        <div class="col">
+          <label for="inputEmail4" class="form-label">Last Name</label>
+          <input type="text" name="lname" class="form-control" id="lname" placeholder="mukasa" aria-label="name" />
+        </div>
+
+      </div>
+      
+      
+
+        <div class="row g-3">
+          
+          <div class="col">
+            <label for="inputEmail4" class="form-label">Role</label>
+            <select id="region" class="form-control" name="role" title="region">
+
+              <option>Urban Farmer</option>
+
+            </select>
+          </div>
+          <div class="col">
+            <label for="inputCity" class="form-label">Date Of Registration</label>
+            <input type="date" name="registration_date" class="form-control" id="inputDOB" placeholder="mm/dd/yy" />
+          </div>
+          <div class="col">
+          <label for="inputEmail4" class="form-label">NIN</label>
+          <input type="text" class="form-control" name="nin" id="nin" placeholder="CM9830HF4243FH-FK" aria-label="NIN" />
+          </div>
+
+
+        </div>
+        <div class="row g-3">
+          <div class="col">
+            <label for="inputEmail4" class="form-label">Email Address</label>
+            <input type="text" class="form-control" name="email" id="email" placeholder="example@gmail.com"
+              aria-label="First name" />
+          </div>
+          <div class="col">
+            <label for="inputEmail4" class="form-label">Type of Residence</label>
+           
+            <select id="occupation" class="form-control" name="residence_type" title="region">
+            
+              <option>landlord</option>
+              <option>Tenant</option>
+            
+            </select>
+
+          </div>
+          <div class="col">
+            <label for="inputZip" class="form-label">Tel. Number</label>
+            <input type="text" class="form-control" id="phone-number1" name="phoneNumber"
+              placeholder="+256-7xx-xxx-xxx" />
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col">
+            <label for="gender">Gender:</label>
+            <div class="radio">
+              <input type="radio" name="gender" autocomplete="off" id="gender1" value="male" placeholder="male" />
+              <span>Male</span>
+              <input type="radio" name="gender" autocomplete="off" id="gender2" value="female" placeholder="gender" />
+              <span>Female</span>
+            </div>
+          </div>
+          <div class="col">
+            <label for="languages">Marital Status</label>
+            <div class="radio">
+              <input type="checkbox" name="Single" autocomplete="off" id="status1" value="Single"
+                placeholder="single" />
+              <span>Single</span>
+              <input type="checkbox" name="Married" autocomplete="off" id="status2" value="Married"
+                placeholder="married" />
+              <span>Married</span>
+
+              <input type="checkbox" name="Divorced" autocomplete="off" id="status4" value="Divorced"
+                placeholder="devorced" />
+              <span>Divorced</span>
+            </div>
+          </div>
+
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required />
+            </div>
+            <div class="col">
+              <label for="password" class="form-label">Confirm Password:</label>
+              <input type="password" class="form-control" id="concirm_password" placeholder="************" name="confirm_password" required />
+            </div>
+
+
+            <div class="form-field">
+              <input type="submit" class="btn" id="submit" value="Register" 
+              onclick="agriculturalOffcer ()" />
+              <small></small>
+            </div>
+          </div>
+        </div>
+      
+    </form>
+  </div><br><br><br><br><br><br><br><br><br>
+  <footer>
+
+
+    <div class="footer-right">
+      <div class="row g-3">
+        <div class="col">
+          <h2 class="footer-logo">Ufarm</h2>
+          <img src="/images/ufarm logo.png" alt="logo" class="img-log"><br><br><br><br>
+          <small>&copy; 2022 Ufarm_paul.Inc</small>
+        </div>
+
+        <div class="col">
+          <h2 class="footer-title">Products</h2>
+          <ul class="footer-list">
+            <li class="footer-item">Poultry</li>
+            <li class="footer-item">Horticulture</li>
+            <li class="footer-item">Diary</li>
+
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="footer-title">Support</h2>
+          <ul class="footer-list">
+            <li class="footer-item">About Ufarm</li>
+            <li class="footer-item">Terms</li>
+            <li class="footer-item">Privacy Policy</li>
+            <li class="footer-item">Help</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="footer-title">Connect with us</h2>
+          <ul class="footer-list">
+            <li class="footer-item">Twitter</li>
+            <li class="footer-item">Facebook</li>
+            <li class="footer-item">+256-778-746-645</li>
+            <li class="footer-item">+256-750-046-645</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+
+  </footer>
+</body>
+
+<script src="./forms.js"></script>
+
+</html>

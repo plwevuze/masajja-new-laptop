@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-logo {
+    height: 50px;
+    width: 50px;
+    /* float: left; */
+}
+
+.navbar-brand {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: green;
+
+}
+
+.carousel-inner {
+    height: 300px;
+    width: 100%;
+}
+
+.dropdown-menu {
+    font-weight: bold;
+}
+
+.container-fluid {
+    background-color: rgba(161, 214, 179, 0.89);
+
+}
+
+/* #inputCity {
+    width: 200px;
+}
+#inputState {
+    margin-left: 100px;
+} */
+
+#lft {
+
+    margin-left: 500px;
+}
+
+.carousel-fluid {
+
+    margin-left: 0%;
+    margin-right: 0px;
+}
+
+.nav-item {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.col_1 {
+    margin: 0;
+    padding: 0;
+}
+
+#intro-cards {
+    margin-top: 20px;
+
+}
+
+#pp {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100px;
+}
+
+#nn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav {
+    height: 60px;
+}
+
+.card {
+    background-color: aquamarine;
+}
+
+#slide-lablez {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+}
+
+#right-slide-label {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    margin-left: 200px;
+}
+
+.container-left {
+    height: 70%;
+    width: 150px;
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+
+.container-center {
+    margin-top: 20px;
+    width: 1000px;
+}
+
+.tt-center {
+    text-align: center;
+}
+
+.lft1,
+#jjj {
+    float: left;
+
+}
+
+.lft1,
+#kkk {
+    margin-left: 250px;
+}
+
+.btn-primary,
+#bt1 {
+    float: left;
+    padding-right: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#contlft{
+    float:left;
+}
+
+
+
+/* ////login page */
+/* .container {
+    padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 400px;
+
+        .modal-content {
+            padding: 1rem;
+        }
+    }
+}
+
+.modal-header {
+    .close {
+        margin-top: -1.5rem;
+    }.container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+}
+
+.form-title {
+    margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+    border-radius: 3rem;
+}
+
+.delimiter {
+    padding: 1rem;
+}
+
+/* .social-buttons {} */
+/* .btn {
+        margin: 0 0.5rem 1rem;
+    }
+
+
+.signup-section {
+    padding: 0.3rem 0rem;
+} */
+
+
+#log {
+    padding: 2rem 0rem;
+    max-width: 400px;
+    margin-left: 500px;
+
+}

@@ -1,0 +1,71 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../bootstrap-5.2.0/dist/css/bootstrap.css')
+  link(rel='stylesheet' href='/uploads.css')
+  title Ufarm
+// ##################nave bar###############################
+main
+  // ############################ upload form ###############
+  .container-center
+    .row
+      .col
+        h5.tt-center
+          | Fill the Form 
+          h5
+            h5 Upload produce
+            form.row.g-3
+              .row.g-3
+                .col
+                  label.form-label(for='inputEmail4') Name of urban Farmer
+                  input.form-control(type='text' placeholder='First name' aria-label='First name')
+                .col
+                  label.form-label(for='inputEmail4') NIN
+                  input.form-control(type='text' placeholder='CM9830HF4243FH-FK' aria-label='NIN')
+                .col
+                  label.form-label(for='inputEmail4') Product Name
+                  input.form-control(type='text' placeholder='Procuct name' aria-label='product name')
+              .col-md-6
+                label.form-label(for='inputEmail4') Unit Price
+                input#inputEmail4.form-control(type='email' placeholder='UGX')
+              .col-md-6
+                label.form-label(for='inputEmail4') Quantity
+                input#inputEmail4d.form-control(type='number' placeholder='Quantity')
+              .col-12
+                label.form-label(for='inputAddress') Product Description
+                input#inputAddress.form-control(type='text' placeholder='Describe product')
+              .col-12
+                label.form-label(for='inputAddress2') Mode Of Payment
+                select#input-payment-mode.form-control
+                  option(selected='') Cash
+                  option Mobile-money
+              .col-12
+                label.form-label(for='inputAddress2') Mode Of Delivery
+                select#input-delivery-mode.form-control
+                  option(selected='') Pick-Up
+                  option Home-Delivery
+              .col-md-6
+                label.form-label(for='inputCity') Date Of Upload
+                input#inputCity.form-control(type='date')
+              .col-md-4
+                label.form-label(for='inputState') Upload Status
+                select#inputState.form-select
+                  option(selected='') Pending
+                  option In Progress
+                  option Approved
+              .col-md-2
+                label.form-label(for='inputZip') Tel. Number
+                input#inputZip.form-control(type='text' placeholder='+256-786-509-687')
+              .col-12
+                .form-check
+                  input#gridCheck.form-check-input(type='checkbox')
+                  label.form-check-label(for='gridCheck')
+                    | Check me out
+              .lft1
+                .col-12
+                  button#jjj.btn.btn-primary(type='submit') Add product
+                #btn-lft.col-12
+                  button#kkk.btn.btn-primary(type='submit') Upload
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js')

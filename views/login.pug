@@ -1,0 +1,113 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  link(rel='icon' type='image/x-icon' href='/images/ufarm logo.png')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css')
+  link(rel='stylesheet' href='/css/home.css')
+  link(rel='stylesheet' href='/css/login.css')
+  title Ufarm
+// ##################nave bar###############################
+.navf
+nav.navbar.navbar-expand-lg.bg-light
+
+  .container-fluid
+    img.img-logo(src='/images/ufarm logo.png' alt='logo')
+    a.navbar-brand(href='/html/home.html') Ufarm
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        li.nav-item
+          a.nav-link.active(aria-current='page' href='/html/home.html') HOME
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | Products &amp; Services
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='#') Pajo Game Louge
+            li
+              hr.dropdown-divider
+            li
+              a.dropdown-item(href='#') Pajo Electronics
+        //
+          <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+          </li>
+        li.nav-item
+          a.nav-link(href='#') Career
+        li.nav-item
+          a.nav-link(href='#') Contact Us
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | Accounts
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='login.html') login
+            li
+              a.dropdown-item(href='register.html') Sign Up
+.container
+  form#signup.form( action='/login' name='registration' onsubmit='return false')
+    h1 Log In to Ufarm
+    .form-field
+      label(for='username') Unique User/Farmer ID:
+      input#username(type='text' name='username' autocomplete='off')
+      small
+    br
+    .form-field
+      label(for='password') Password:
+      input#password(type='password' name='password' autocomplete='off' required='')
+      small
+    br
+    br
+    br
+    br
+    .form-field
+      input#submit.btn(type='submit' value='Log In' onclick='validateAll()')
+      small
+    br
+    br
+    a#lk(href='#') Forgot password?
+    br
+br
+br
+br
+br
+br
+br
+br
+br
+footer
+.foot 
+  .footer-right
+    .row.g-3
+      .col
+        h2.footer-logo Ufarm
+        img.img-log(src='/images/ufarm logo.png' alt='logo')
+        br
+        br
+        br
+        br
+        small &copy; 2022 Ufarm_paul.Inc
+      .col
+        h2.footer-title Products
+        ul.footer-list
+          li.footer-item Poultry
+          li.footer-item Horticulture
+          li.footer-item Diary
+      .col
+        h2.footer-title Support
+        ul.footer-list
+          li.footer-item About Ufarm
+          li.footer-item Terms
+          li.footer-item Privacy Policy
+          li.footer-item Help
+      .col
+        h2.footer-title Connect with us
+        ul.footer-list
+          li.footer-item Twitter
+          li.footer-item Facebook
+          li.footer-item +256-778-746-645
+          li.footer-item +256-750-046-645
+script(src='/js/login.js')

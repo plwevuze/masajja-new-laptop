@@ -1,0 +1,38 @@
+.btn {
+    padding: 10px 50px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: #6a1b9a;
+    border: 2px solid #6a1b9a;
+    cursor: pointer;
+    margin-left: 550px;
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: #6a1b9a;
+    color: aliceblue;
+}
+
+body {
+    /* background-color: rgba(0, 4, 255, 0.301); */
+    /* background-image: url(/images/); */
+    background-image: url(/images/oranges.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-blend-mode: darken;
+}
+#nn{
+    margin: 0;
+    background-color: transparent;
+    opacity: 0.5;
+}
+.navbar {
+    text-align: center;
+    font-weight: bold;
+   
+    
+}   
+
+/* home.css */
